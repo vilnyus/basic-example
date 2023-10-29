@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add to Cart</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" type="image/png" href="resources\kitty.jpeg">
+</head>
+<body>
+    <form>
+        <div class="icon-container">
+            <i class="fas fa-star"></i> <!-- Font Awesome star icon, replace with your desired icon -->
+        </div>
+        <div>
+            <img id="kitty" src="resources\kitty.jpeg" alt="Image Kitty" width="150" height="150">
+            <input type="text" class="custom-input" id="user-input" name="user-input" placeholder="Bread">
+            <button class="custom-button" id="add-button">Add to cart</button>
+        </div>   
+        <div id="buttonContainer"></div>     
+        <script src="functions.js" type="module"></script>
+        <script src="index.js" type="module"></script>
+    </form>
+</body>
+</html>

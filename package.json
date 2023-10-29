@@ -1,0 +1,17 @@
+{
+    "name": "basic-example",
+    "version": "1.0.0",
+    "description": "A short description of your project",
+    "main": "index.js",
+    "scripts": {
+        "start": "lite-server"
+    },
+    "author": "Vagharsh Ghahramanyan",
+    "license": "MIT",
+    "devDependencies": {
+        "lite-server": "^2.6.1"
+    },
+    "dependencies": {
+        "firebase": "^10.5.2"
+    }
+}
