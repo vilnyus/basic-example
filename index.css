@@ -15,6 +15,19 @@ html, body {
     margin-bottom: 20px;
 }
 
+.suggest-button {
+    width: 125px; /* Width in pixels */
+    height: 30px; /* Height in pixels */
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
 /* Style the button on hover */
 .custom-button:hover {
     background-color: #45a049; /* Darker green color */

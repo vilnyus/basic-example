@@ -12,6 +12,7 @@
         "lite-server": "^2.6.1"
     },
     "dependencies": {
-        "firebase": "^10.5.2"
+        "firebase": "^10.5.2",
+        "openai": "^4.0.0"
     }
 }
