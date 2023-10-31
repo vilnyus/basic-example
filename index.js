@@ -3,15 +3,15 @@ import { getDatabase, ref, push } from 'https://www.gstatic.com/firebasejs/10.5.
 import { getToken } from "../token.js";
 
 // const fs = require('fs').promises; 
-
-async function readFile(filePath) { //2 
-    try { 
-    const data = await fs.readFile(filePath); 
-    console.log(data.toString()); 
-    } catch (error) { 
-    console.error(`Got an error trying to read the file: ${error.message}`);
-    } 
-} 
+//
+// async function readFile(filePath) { //2 
+//     try { 
+//     const data = await fs.readFile(filePath); 
+//     console.log(data.toString()); 
+//     } catch (error) { 
+//     console.error(`Got an error trying to read the file: ${error.message}`);
+//     } 
+// } 
 
 const appSettings = {
     databaseURL: "https://playground-c8346-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -53,7 +53,12 @@ button.addEventListener("click", function() {
     });
 */
 
+    //Getting token from token.js file 
+    // export function getToken() {
+    //     return "Your_token";
+    // }
     const apiToken = getToken();
+
 
     if (inputString) {
         var requestData = {
@@ -86,9 +91,13 @@ button.addEventListener("click", function() {
             });
         })
         .catch(function(error){
+
             console.log(error);
+
         });
     }
+    
+    //Pushing input firld value to Firebase.
     push(groceriesInDb, userInput.value);
 });
 
