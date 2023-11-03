@@ -6,3 +6,4 @@ token.js
 *.tmp
 dist/
 build/
+Log-Container.json
