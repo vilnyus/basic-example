@@ -1,3 +1,3 @@
 export function getToken() {
-    return "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";
+    return "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";
 }
