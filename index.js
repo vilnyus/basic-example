@@ -69,9 +69,10 @@ button.addEventListener("click", function() {
 
         axios.post("https://api.openai.com/v1/engines/text-davinci-003/completions", requestData, { 
             headers : {
-                "Authorization": `Bearer ${apiToken}`,
+                // "Authorization": 'Bearer '+ apiToken,
+                "Authorization": "Bearer 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",
                 "Content-Type": "application/json"
-            }
+            },
         }).then(function(response){
             var generatedStrings = response.data.choices.map(choice=>choice.text);
 
@@ -95,10 +96,35 @@ button.addEventListener("click", function() {
             console.log(error);
 
         });
+
+        //Add shoping list on page
+        var shopingListContainer = document.getElementById("shopingListContainer");
+        var shopingText = document.createTextNode("Hello World");
+        shopingListContainer.innerHTML = "";
+        shopingListContainer.appendChild(shopingText);
+
+        
+        
+
     }
     
     //Pushing input firld value to Firebase.
     push(groceriesInDb, userInput.value);
+
+    //Get element from Friebase database
+    ref.once('value')
+        .then(snapshot => {
+            snapshot.forEach(childSnapshot => {
+                const item = childSnapshot.val();
+                data.push(item);
+            });
+            // Now, the 'data' array contains the data from the database
+            console.log(data);
+        })
+            .catch(error => {
+            console.error('Error retrieving data:', error);
+        });
+       
 });
 
 

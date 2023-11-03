@@ -2,16 +2,38 @@ html, body {
     margin: 20;
     padding: 20;
 }
+
+#shopingListContainer {
+    /* Apply your styles here */
+    font-size: 16px; /* Change the font size to your preference */
+    color: #e6cc0c;    /* Change the text color to your preference */
+    font-weight: bold; /* Adjust the font weight if needed */
+    /* Add more styles as desired */
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320;
+    margin: 30px auto;
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
 /* Define the styles for the custom button */
 .custom-button {
-    width: 150px; /* Width in pixels */
-    height: 30px; /* Height in pixels */
+    width: 300px; /* Width in pixels */
+    height: 50px; /* Height in pixels */
     background-color: #4CAF50; /* Green background color */
     color: white; /* Text color */
     padding: 10px 20px; /* Padding to adjust button size */
     border: 1px; /* Remove button border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -25,6 +47,7 @@ html, body {
     margin: 5px;
     border-radius: 3px; /* Rounded corners */
     cursor: pointer;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -35,12 +58,14 @@ html, body {
 
 /* Style the custom input field */
 .custom-input {
-    width: 150px; /* Width in pixels */
-    height: 30px; /* Height in pixels */
+    width: 300px; /* Width in pixels */
+    height: 50px; /* Height in pixels */
     padding: 10px 20px; /* Add padding to adjust the size and spacing */
     border: 1px solid #ccc; /* Add a border with a light gray color */
     border-radius: 5px; /* Rounded corners */
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
 }
 
 /* Style the input field on focus */
